@@ -67,7 +67,7 @@ while(True):
         client.publish("train/1/flag", flag)
         leaves_0 = client.subscribe("train/0/leaves", leaves)
         laser_0 = client.subscribe("train/0/laser", laser)
-        speed_0 = client.subs("train/0/speed", speed)
+        speed_0 = client.subscribe("train/0/speed", speed)
         distance_0 = client.subscribe("train/0/distance", distance)
         time.sleep(0.1)
         
