@@ -73,7 +73,7 @@ while(True):
         
         speed = speed_0
         
-    distance_0 = client.psubscribe("train/0/distance", distance)
+    distance_0 = client.subscribe("train/0/distance", distance)
 
 client.loop_stop()
 client.disconnect()
